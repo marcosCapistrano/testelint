@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^16.4.10",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "eslint": "^7.32.0",
@@ -18,13 +19,15 @@
     "*.ts": [
       "yarn prettier --write",
       "yarn eslint",
-      "git add .",
-      "git cz"
+      "git add ."
     ]
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
