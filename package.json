@@ -17,7 +17,14 @@
   "lint-staged": {
     "*.ts": [
       "yarn prettier --write",
-      "yarn eslint"
+      "yarn eslint",
+      "git add .",
+      "git cz"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
