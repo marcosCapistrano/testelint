@@ -1,0 +1,17 @@
+TN:
+SF:dist/sum.js
+FN:2,sum
+FNF:1
+FNH:1
+FNDA:10,sum
+DA:1,1
+DA:2,10
+DA:3,10
+DA:4,10
+DA:5,1
+LF:5
+LH:5
+BRDA:2,0,0,10
+BRF:1
+BRH:1
+end_of_record
