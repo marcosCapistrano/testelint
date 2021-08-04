@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "^16.4.10",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "dev": "nodemon --watch 'src' --exec 'yarn eslint . && tsc && node dist/index.js' -e ts",
+    "dev": "nodemon --watch 'src' --exec 'yarn eslint src/**/*.ts && tsc && node dist/index.js' -e ts",
     "test": "jest"
   },
   "lint-staged": {
