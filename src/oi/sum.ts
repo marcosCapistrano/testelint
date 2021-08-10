@@ -2,4 +2,14 @@ function sum(a: number, b: number) {
   return a + b;
 }
 
-module.exports = sum;
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+console.log('oi');
+
+export default sum;

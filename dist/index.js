@@ -4,9 +4,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var sum = require("./oi/sum");
+var sum_1 = __importDefault(require("./oi/sum"));
 var app = express_1.default();
 app.listen(3000, function () {
-    console.log("Server started on 3000");
-    console.log(sum(2, 3));
+    console.log('Server started on 3000');
+    console.log(sum_1.default(2, 3));
+    console.log(sum_1.default(2, 3));
+    console.log(sum_1.default(2, 3));
+    console.log(sum_1.default(2, 3));
+    console.log(sum_1.default(2, 3));
 });
+console.log('oi');

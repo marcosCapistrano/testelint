@@ -17,17 +17,14 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "dev": "nodemon --watch 'src' --exec 'yarn eslint src/**/*.ts && tsc && node dist/index.js' -e ts",
-    "test": "jest"
+    "dev": "nodemon --watch 'src' --exec 'yarn eslint . && tsc && node dist/index.js' -e ts",
+    "test": "yarn eslint . && tsc && jest"
   },
   "lint-staged": {
     "*.ts": [
       "yarn prettier --write",
-      "yarn eslint",
+      "yarn eslint .",
       "git add ."
-    ],
-    "**/*.js": [
-      "yarn test"
     ]
   },
   "config": {

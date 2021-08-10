@@ -13,4 +13,9 @@ module.exports = {
   rules: {
     "import/extensions": 0,
   },
+  "overrides": [
+    {
+      "files": [ "src/**/*.ts" ],
+    }
+  ]
 };
